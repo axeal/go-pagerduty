@@ -18,7 +18,7 @@ const (
 // APIObject represents generic api json response that is shared by most
 // domain object (like escalation
 type APIObject struct {
-	ID      string `json:"id,omitempty" bson:"id"`
+	ID      string `json:"id,omitempty" bson:"-"`
 	Type    string `json:"type,omitempty" bson:"type"`
 	Summary string `json:"summary,omitempty" bson:"summary"`
 	Self    string `json:"self,omitempty" bson:"self"`

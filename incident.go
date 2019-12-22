@@ -75,7 +75,7 @@ type Incident struct {
 	Priority             *Priority         `json:"priority,omitempty" bson:"priority,omitempty"`
 	Urgency              string            `json:"urgency,omitempty" bson:"urgency,omitempty"`
 	Status               string            `json:"status,omitempty" bson:"status,omitempty"`
-	Id                   string            `json:"id,omitempty" bson:"-"`
+	Id                   string            `json:"id,omitempty" bson:"id,omitempty"`
 	ResolveReason        ResolveReason     `json:"resolve_reason,omitempty" bson:"resolve_reason,omitempty"`
 	AlertCounts          AlertCounts       `json:"alert_counts,omitempty" bson:"alert_counts,omitempty"`
 	Body                 IncidentBody      `json:"body,omitempty" bson:"body,omitempty"`
