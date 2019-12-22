@@ -18,11 +18,11 @@ const (
 // APIObject represents generic api json response that is shared by most
 // domain object (like escalation
 type APIObject struct {
-	ID      string `json:"id,omitempty"`
-	Type    string `json:"type,omitempty"`
-	Summary string `json:"summary,omitempty"`
-	Self    string `json:"self,omitempty"`
-	HTMLURL string `json:"html_url,omitempty"`
+	ID      string `json:"id,omitempty" bson:"id"`
+	Type    string `json:"type,omitempty" bson:"type"`
+	Summary string `json:"summary,omitempty" bson:"summary"`
+	Self    string `json:"self,omitempty" bson:"self"`
+	HTMLURL string `json:"html_url,omitempty" bson:"html_url"`
 }
 
 // APIListObject are the fields used to control pagination when listing objects.
